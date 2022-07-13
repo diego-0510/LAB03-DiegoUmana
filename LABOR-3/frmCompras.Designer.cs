@@ -85,7 +85,7 @@ namespace LABOR_3
             // 
             // txtIdProducto
             // 
-            this.txtIdProducto.Location = new System.Drawing.Point(244, 177);
+            this.txtIdProducto.Location = new System.Drawing.Point(212, 184);
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(100, 20);
             this.txtIdProducto.TabIndex = 41;
@@ -101,7 +101,7 @@ namespace LABOR_3
             // 
             // txtIdCliente
             // 
-            this.txtIdCliente.Location = new System.Drawing.Point(244, 136);
+            this.txtIdCliente.Location = new System.Drawing.Point(212, 140);
             this.txtIdCliente.Name = "txtIdCliente";
             this.txtIdCliente.Size = new System.Drawing.Size(100, 20);
             this.txtIdCliente.TabIndex = 39;
@@ -208,6 +208,7 @@ namespace LABOR_3
             this.Controls.Add(this.lblIdProducto);
             this.Name = "frmCompras";
             this.Text = "Compras";
+            this.Load += new System.EventHandler(this.frmCompras_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

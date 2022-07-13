@@ -47,7 +47,6 @@ namespace LABOR_3
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarComprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarYEliminarComprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
@@ -185,8 +184,7 @@ namespace LABOR_3
             // 
             this.buscarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buscarToolStripMenuItem1,
-            this.ingresarComprasToolStripMenuItem1,
-            this.buscarYEliminarComprasToolStripMenuItem1});
+            this.ingresarComprasToolStripMenuItem1});
             this.buscarToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.buscarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
@@ -206,12 +204,6 @@ namespace LABOR_3
             this.ingresarComprasToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
             this.ingresarComprasToolStripMenuItem1.Text = "Ingresar, Buscar, Eliminar Compras";
             this.ingresarComprasToolStripMenuItem1.Click += new System.EventHandler(this.ingresarComprasToolStripMenuItem1_Click);
-            // 
-            // buscarYEliminarComprasToolStripMenuItem1
-            // 
-            this.buscarYEliminarComprasToolStripMenuItem1.Name = "buscarYEliminarComprasToolStripMenuItem1";
-            this.buscarYEliminarComprasToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
-            this.buscarYEliminarComprasToolStripMenuItem1.Text = "Buscar y eliminar Compras";
             // 
             // label1
             // 
@@ -284,7 +276,6 @@ namespace LABOR_3
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ingresarComprasToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem buscarYEliminarComprasToolStripMenuItem1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvClientes;
     }
