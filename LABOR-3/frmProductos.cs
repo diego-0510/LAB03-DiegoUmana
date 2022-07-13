@@ -22,9 +22,9 @@ namespace LABOR_3
         private void cargarGrid()
         {
             string[] datos = { "IdProducto", "descripcion", "precio"};
-            DataTable informacionEstudiantes = new DataTable();
-            informacionEstudiantes = consultar.consultaTodosElementos("productos", datos);
-            dgvProducto.DataSource = informacionEstudiantes;
+            DataTable informacionProducto = new DataTable();
+            informacionProducto = consultar.consultaTodosElementos("productos", datos);
+            dgvProducto.DataSource = informacionProducto;
         }
 
 

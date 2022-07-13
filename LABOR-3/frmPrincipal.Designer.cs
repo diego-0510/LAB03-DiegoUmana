@@ -48,7 +48,10 @@ namespace LABOR_3
             this.buscarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarComprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarYEliminarComprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -174,7 +177,7 @@ namespace LABOR_3
             this.buscarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(506, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(852, 24);
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -193,28 +196,48 @@ namespace LABOR_3
             // buscarToolStripMenuItem1
             // 
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
             this.buscarToolStripMenuItem1.Text = "Ingresar y Ver Productos";
             this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
             // 
             // ingresarComprasToolStripMenuItem1
             // 
             this.ingresarComprasToolStripMenuItem1.Name = "ingresarComprasToolStripMenuItem1";
-            this.ingresarComprasToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
-            this.ingresarComprasToolStripMenuItem1.Text = "Ingresar Compras";
+            this.ingresarComprasToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
+            this.ingresarComprasToolStripMenuItem1.Text = "Ingresar, Buscar, Eliminar Compras";
             this.ingresarComprasToolStripMenuItem1.Click += new System.EventHandler(this.ingresarComprasToolStripMenuItem1_Click);
             // 
             // buscarYEliminarComprasToolStripMenuItem1
             // 
             this.buscarYEliminarComprasToolStripMenuItem1.Name = "buscarYEliminarComprasToolStripMenuItem1";
-            this.buscarYEliminarComprasToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
+            this.buscarYEliminarComprasToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
             this.buscarYEliminarComprasToolStripMenuItem1.Text = "Buscar y eliminar Compras";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(560, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Clientes";
+            // 
+            // dgvClientes
+            // 
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Location = new System.Drawing.Point(444, 116);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.Size = new System.Drawing.Size(384, 203);
+            this.dgvClientes.TabIndex = 32;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 503);
+            this.ClientSize = new System.Drawing.Size(852, 503);
+            this.Controls.Add(this.dgvClientes);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTitulo);
@@ -235,6 +258,7 @@ namespace LABOR_3
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,6 +285,8 @@ namespace LABOR_3
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ingresarComprasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem buscarYEliminarComprasToolStripMenuItem1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvClientes;
     }
 }
 

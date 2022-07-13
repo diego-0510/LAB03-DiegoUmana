@@ -37,6 +37,14 @@ namespace LABOR_3
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.lblIdProducto = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFechaBuscada = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtIdProductoBuscado = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtidClienteBuscar = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -107,11 +115,89 @@ namespace LABOR_3
             this.lblIdProducto.TabIndex = 38;
             this.lblIdProducto.Text = "ID Producto";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(523, 307);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 53;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(484, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(214, 18);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Buscar y Eliminar Compras";
+            // 
+            // txtFechaBuscada
+            // 
+            this.txtFechaBuscada.Enabled = false;
+            this.txtFechaBuscada.Location = new System.Drawing.Point(578, 226);
+            this.txtFechaBuscada.Name = "txtFechaBuscada";
+            this.txtFechaBuscada.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaBuscada.TabIndex = 51;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(473, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Fecha Compra";
+            // 
+            // txtIdProductoBuscado
+            // 
+            this.txtIdProductoBuscado.Enabled = false;
+            this.txtIdProductoBuscado.Location = new System.Drawing.Point(578, 177);
+            this.txtIdProductoBuscado.Name = "txtIdProductoBuscado";
+            this.txtIdProductoBuscado.Size = new System.Drawing.Size(100, 20);
+            this.txtIdProductoBuscado.TabIndex = 49;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(473, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "ID Cliente";
+            // 
+            // txtidClienteBuscar
+            // 
+            this.txtidClienteBuscar.Location = new System.Drawing.Point(578, 136);
+            this.txtidClienteBuscar.Name = "txtidClienteBuscar";
+            this.txtidClienteBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtidClienteBuscar.TabIndex = 47;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(473, 184);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 46;
+            this.label4.Text = "ID Producto";
+            // 
             // frmCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 436);
+            this.ClientSize = new System.Drawing.Size(774, 436);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtFechaBuscada);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtIdProductoBuscado);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtidClienteBuscar);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtFechaCompra);
@@ -137,5 +223,13 @@ namespace LABOR_3
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.Label lblIdProducto;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFechaBuscada;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtIdProductoBuscado;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtidClienteBuscar;
+        private System.Windows.Forms.Label label4;
     }
 }

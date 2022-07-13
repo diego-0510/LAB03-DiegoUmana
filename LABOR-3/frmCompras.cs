@@ -63,5 +63,29 @@ namespace LABOR_3
             txtIdProducto.Clear();
             txtFechaCompra.Clear();
         }
+
+        private void cargarInformacion(DataTable informacionCompra)
+        {
+            //txtidClienteBuscar.Text = informacionCompra.Rows[0]["idCliente"].ToString();
+            txtIdProductoBuscado.Text = informacionCompra.Rows[0]["idProducto"].ToString();
+            txtFechaBuscada.Text = informacionCompra.Rows[0]["fechaCompra"].ToString();
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            if (txtidClienteBuscar.Text == "")
+            {
+                MessageBox.Show("Agregar Codigo...", "Error",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string[] datos = {"idProducto", "fechaCompra" };
+                string condicion = " where idCliente= " + txtidClienteBuscar.Text;
+                DataTable informacionCompra = new DataTable();
+                informacionCompra = consultar.consultaTodosElementosWhere("compras", datos, condicion);
+                cargarInformacion(informacionCompra);
+            }
+        }
     }
 }

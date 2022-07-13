@@ -28,6 +28,23 @@ namespace CapaNegocio
 
         }
 
+        public static DataTable consultaTodosElementosWhere(string tabla, string[] datos, string where)
+        {
+            string columnas = "";
+            for (int i = 0; i < datos.Length; i++)
+            {
+                columnas += "\"" + datos[i] + "\"";
+                if (i != datos.Length - 1)
+                {
+                    columnas += ", ";
+                }
+            }
+            string query = "Select " + columnas + " from \"" + tabla + "\" " + where;
+            DataTable resultado = conexionBD.consultaUnDato(query);
+            return resultado;
+
+        }
+
         public static string insertar(string tabla, dynamic[] datos)
         {
             string info = conexionBD.insertarDatos(tabla, datos);

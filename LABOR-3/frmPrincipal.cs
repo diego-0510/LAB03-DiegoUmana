@@ -53,11 +53,12 @@ namespace LABOR_3
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             dynamic[] datos = insertarDatos();
-            string info = consultar.insertar("productos", datos);
+            string info = consultar.insertar("clientes", datos);
             if (info == "ok")
             {
                 MessageBox.Show("Datos Ingresados...", "Aceptado",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cargarGrid();
             }
             if (info == "error")
             {
@@ -78,10 +79,18 @@ namespace LABOR_3
             txtFechaNac.Clear();
         }
 
+        private void cargarGrid()
+        {
+            string[] datos = { "cedula", "nombre", "apellido","fechaNacimiento","sexo" };
+            DataTable informacionClientes = new DataTable();
+            informacionClientes = consultar.consultaTodosElementos("clientes", datos);
+            dgvClientes.DataSource = informacionClientes;
+        }
+
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-
+            cargarGrid();
         }
 
         private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
