@@ -31,18 +31,18 @@ namespace LABOR_3
         {
             this.btnIngresar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtCantidadActual = new System.Windows.Forms.TextBox();
-            this.lblCantidadActual = new System.Windows.Forms.Label();
-            this.txtCantidadMin = new System.Windows.Forms.TextBox();
-            this.lblCantidadMin = new System.Windows.Forms.Label();
-            this.txtCantidadMax = new System.Windows.Forms.TextBox();
-            this.lblCantidadMax = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.txtFechaNac = new System.Windows.Forms.TextBox();
+            this.lblFechaNac = new System.Windows.Forms.Label();
+            this.txtSexo = new System.Windows.Forms.TextBox();
+            this.lblSexo = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.lblApellido = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -53,6 +53,7 @@ namespace LABOR_3
             this.btnIngresar.TabIndex = 29;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // lblTitulo
             // 
@@ -64,101 +65,101 @@ namespace LABOR_3
             this.lblTitulo.TabIndex = 28;
             this.lblTitulo.Text = "Ingresar Cliente";
             // 
-            // txtCantidadActual
+            // txtFechaNac
             // 
-            this.txtCantidadActual.Location = new System.Drawing.Point(246, 344);
-            this.txtCantidadActual.Name = "txtCantidadActual";
-            this.txtCantidadActual.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidadActual.TabIndex = 27;
+            this.txtFechaNac.Location = new System.Drawing.Point(246, 344);
+            this.txtFechaNac.Name = "txtFechaNac";
+            this.txtFechaNac.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaNac.TabIndex = 27;
             // 
-            // lblCantidadActual
+            // lblFechaNac
             // 
-            this.lblCantidadActual.AutoSize = true;
-            this.lblCantidadActual.Location = new System.Drawing.Point(141, 351);
-            this.lblCantidadActual.Name = "lblCantidadActual";
-            this.lblCantidadActual.Size = new System.Drawing.Size(93, 13);
-            this.lblCantidadActual.TabIndex = 26;
-            this.lblCantidadActual.Text = "Fecha Nacimiento";
+            this.lblFechaNac.AutoSize = true;
+            this.lblFechaNac.Location = new System.Drawing.Point(141, 351);
+            this.lblFechaNac.Name = "lblFechaNac";
+            this.lblFechaNac.Size = new System.Drawing.Size(93, 13);
+            this.lblFechaNac.TabIndex = 26;
+            this.lblFechaNac.Text = "Fecha Nacimiento";
             // 
-            // txtCantidadMin
+            // txtSexo
             // 
-            this.txtCantidadMin.Location = new System.Drawing.Point(246, 299);
-            this.txtCantidadMin.Name = "txtCantidadMin";
-            this.txtCantidadMin.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidadMin.TabIndex = 25;
+            this.txtSexo.Location = new System.Drawing.Point(246, 299);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(100, 20);
+            this.txtSexo.TabIndex = 25;
             // 
-            // lblCantidadMin
+            // lblSexo
             // 
-            this.lblCantidadMin.AutoSize = true;
-            this.lblCantidadMin.Location = new System.Drawing.Point(141, 306);
-            this.lblCantidadMin.Name = "lblCantidadMin";
-            this.lblCantidadMin.Size = new System.Drawing.Size(31, 13);
-            this.lblCantidadMin.TabIndex = 24;
-            this.lblCantidadMin.Text = "Sexo";
+            this.lblSexo.AutoSize = true;
+            this.lblSexo.Location = new System.Drawing.Point(141, 306);
+            this.lblSexo.Name = "lblSexo";
+            this.lblSexo.Size = new System.Drawing.Size(31, 13);
+            this.lblSexo.TabIndex = 24;
+            this.lblSexo.Text = "Sexo";
             // 
-            // txtCantidadMax
+            // txtApellido
             // 
-            this.txtCantidadMax.Location = new System.Drawing.Point(246, 253);
-            this.txtCantidadMax.Name = "txtCantidadMax";
-            this.txtCantidadMax.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidadMax.TabIndex = 23;
+            this.txtApellido.Location = new System.Drawing.Point(246, 253);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 23;
             // 
-            // lblCantidadMax
+            // lblApellido
             // 
-            this.lblCantidadMax.AutoSize = true;
-            this.lblCantidadMax.Location = new System.Drawing.Point(141, 260);
-            this.lblCantidadMax.Name = "lblCantidadMax";
-            this.lblCantidadMax.Size = new System.Drawing.Size(44, 13);
-            this.lblCantidadMax.TabIndex = 22;
-            this.lblCantidadMax.Text = "Apellido";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(246, 206);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.txtDescripcion.TabIndex = 21;
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(141, 213);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(44, 13);
-            this.lblDescripcion.TabIndex = 20;
-            this.lblDescripcion.Text = "Nombre";
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(141, 260);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(44, 13);
+            this.lblApellido.TabIndex = 22;
+            this.lblApellido.Text = "Apellido";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(246, 157);
+            this.txtNombre.Location = new System.Drawing.Point(246, 206);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 19;
+            this.txtNombre.TabIndex = 21;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(141, 164);
+            this.lblNombre.Location = new System.Drawing.Point(141, 213);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(40, 13);
-            this.lblNombre.TabIndex = 18;
-            this.lblNombre.Text = "Cedula";
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.TabIndex = 20;
+            this.lblNombre.Text = "Nombre";
             // 
-            // txtCodigo
+            // txtCedula
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(246, 116);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 17;
+            this.txtCedula.Location = new System.Drawing.Point(246, 157);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(100, 20);
+            this.txtCedula.TabIndex = 19;
             // 
-            // lblCodigo
+            // lblCedula
             // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(141, 123);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(53, 13);
-            this.lblCodigo.TabIndex = 16;
-            this.lblCodigo.Text = "ID Cliente";
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.Location = new System.Drawing.Point(141, 164);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(40, 13);
+            this.lblCedula.TabIndex = 18;
+            this.lblCedula.Text = "Cedula";
+            // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.Location = new System.Drawing.Point(246, 116);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtIdCliente.TabIndex = 17;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Location = new System.Drawing.Point(141, 123);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(53, 13);
+            this.lblCliente.TabIndex = 16;
+            this.lblCliente.Text = "ID Cliente";
             // 
             // frmPrincipal
             // 
@@ -167,20 +168,21 @@ namespace LABOR_3
             this.ClientSize = new System.Drawing.Size(506, 503);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.txtCantidadActual);
-            this.Controls.Add(this.lblCantidadActual);
-            this.Controls.Add(this.txtCantidadMin);
-            this.Controls.Add(this.lblCantidadMin);
-            this.Controls.Add(this.txtCantidadMax);
-            this.Controls.Add(this.lblCantidadMax);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.txtFechaNac);
+            this.Controls.Add(this.lblFechaNac);
+            this.Controls.Add(this.txtSexo);
+            this.Controls.Add(this.lblSexo);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.txtCedula);
+            this.Controls.Add(this.lblCedula);
+            this.Controls.Add(this.txtIdCliente);
+            this.Controls.Add(this.lblCliente);
             this.Name = "frmPrincipal";
             this.Text = "CODEXA";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,18 +192,18 @@ namespace LABOR_3
 
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox txtCantidadActual;
-        private System.Windows.Forms.Label lblCantidadActual;
-        private System.Windows.Forms.TextBox txtCantidadMin;
-        private System.Windows.Forms.Label lblCantidadMin;
-        private System.Windows.Forms.TextBox txtCantidadMax;
-        private System.Windows.Forms.Label lblCantidadMax;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.TextBox txtFechaNac;
+        private System.Windows.Forms.Label lblFechaNac;
+        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.Label lblSexo;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.Label lblCliente;
     }
 }
 
