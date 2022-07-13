@@ -194,7 +194,7 @@ namespace LABOR_3
             // 
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
             this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
-            this.buscarToolStripMenuItem1.Text = "Ingresar Productos";
+            this.buscarToolStripMenuItem1.Text = "Ingresar y Ver Productos";
             this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
             // 
             // ingresarComprasToolStripMenuItem1

@@ -37,6 +37,8 @@ namespace LABOR_3
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.lblIdProducto = new System.Windows.Forms.Label();
+            this.dgvProducto = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -107,11 +109,20 @@ namespace LABOR_3
             this.lblIdProducto.TabIndex = 30;
             this.lblIdProducto.Text = "ID Producto";
             // 
+            // dgvProducto
+            // 
+            this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducto.Location = new System.Drawing.Point(409, 68);
+            this.dgvProducto.Name = "dgvProducto";
+            this.dgvProducto.Size = new System.Drawing.Size(344, 158);
+            this.dgvProducto.TabIndex = 38;
+            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 404);
+            this.ClientSize = new System.Drawing.Size(784, 404);
+            this.Controls.Add(this.dgvProducto);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtPrecio);
@@ -122,6 +133,8 @@ namespace LABOR_3
             this.Controls.Add(this.lblIdProducto);
             this.Name = "frmProductos";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.frmProductos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +150,6 @@ namespace LABOR_3
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Label lblIdProducto;
+        private System.Windows.Forms.DataGridView dgvProducto;
     }
 }

@@ -19,6 +19,15 @@ namespace LABOR_3
         }
 
 
+        private void cargarGrid()
+        {
+            string[] datos = { "IdProducto", "descripcion", "precio"};
+            DataTable informacionEstudiantes = new DataTable();
+            informacionEstudiantes = consultar.consultaTodosElementos("productos", datos);
+            dgvProducto.DataSource = informacionEstudiantes;
+        }
+
+
         private dynamic[] insertarDatos()
         {
             dynamic[] datos = new dynamic[3];
@@ -50,6 +59,7 @@ namespace LABOR_3
             {
                 MessageBox.Show("Datos Ingresados...", "Aceptado",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cargarGrid();
             }
             if (info == "error")
             {
@@ -64,6 +74,11 @@ namespace LABOR_3
             txtIdProducto.Clear();
             txtDescripcion.Clear();
             txtPrecio.Clear();
+        }
+
+        private void frmProductos_Load(object sender, EventArgs e)
+        {
+            cargarGrid();
         }
     }
 }

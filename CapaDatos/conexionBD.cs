@@ -1,6 +1,7 @@
 ﻿using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,24 @@ namespace CapaDatos
         {
             conexion.Close();
             Console.WriteLine("Desonectado");
+        }
+
+        public static DataTable consultaUnDato(string query)
+        {
+            try
+            {
+                conectarPostgresSQL();
+                NpgsqlCommand conector = new NpgsqlCommand(query, conexion);
+                NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
+                DataTable tabla = new DataTable();
+                datos.Fill(tabla);
+                desconectarPostgresSQL();
+                return tabla;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public static string insertarDatos(string tabla, dynamic[] datos)

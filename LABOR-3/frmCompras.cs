@@ -59,7 +59,9 @@ namespace LABOR_3
 
         private void limpiarCampos()
         {
-
+            txtIdCliente.Clear();
+            txtIdProducto.Clear();
+            txtFechaCompra.Clear();
         }
     }
 }

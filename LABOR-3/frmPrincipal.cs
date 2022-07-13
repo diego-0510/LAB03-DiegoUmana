@@ -92,7 +92,8 @@ namespace LABOR_3
 
         private void ingresarComprasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            frmCompras ventaCompras = new frmCompras();
+            ventaCompras.Visible = true;
         }
     }
 }
