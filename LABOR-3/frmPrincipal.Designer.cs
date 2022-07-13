@@ -43,6 +43,12 @@ namespace LABOR_3
             this.lblCedula = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.lblCliente = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarComprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarYEliminarComprasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -161,11 +167,55 @@ namespace LABOR_3
             this.lblCliente.TabIndex = 16;
             this.lblCliente.Text = "ID Cliente";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buscarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(506, 24);
+            this.menuStrip1.TabIndex = 30;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // buscarToolStripMenuItem
+            // 
+            this.buscarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buscarToolStripMenuItem1,
+            this.ingresarComprasToolStripMenuItem1,
+            this.buscarYEliminarComprasToolStripMenuItem1});
+            this.buscarToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.buscarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.buscarToolStripMenuItem.Text = "Opciones";
+            // 
+            // buscarToolStripMenuItem1
+            // 
+            this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
+            this.buscarToolStripMenuItem1.Text = "Ingresar Productos";
+            this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
+            // 
+            // ingresarComprasToolStripMenuItem1
+            // 
+            this.ingresarComprasToolStripMenuItem1.Name = "ingresarComprasToolStripMenuItem1";
+            this.ingresarComprasToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
+            this.ingresarComprasToolStripMenuItem1.Text = "Ingresar Compras";
+            this.ingresarComprasToolStripMenuItem1.Click += new System.EventHandler(this.ingresarComprasToolStripMenuItem1_Click);
+            // 
+            // buscarYEliminarComprasToolStripMenuItem1
+            // 
+            this.buscarYEliminarComprasToolStripMenuItem1.Name = "buscarYEliminarComprasToolStripMenuItem1";
+            this.buscarYEliminarComprasToolStripMenuItem1.Size = new System.Drawing.Size(215, 22);
+            this.buscarYEliminarComprasToolStripMenuItem1.Text = "Buscar y eliminar Compras";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 503);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtFechaNac);
@@ -183,6 +233,8 @@ namespace LABOR_3
             this.Name = "frmPrincipal";
             this.Text = "CODEXA";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,6 +256,11 @@ namespace LABOR_3
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ingresarComprasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem buscarYEliminarComprasToolStripMenuItem1;
     }
 }
 

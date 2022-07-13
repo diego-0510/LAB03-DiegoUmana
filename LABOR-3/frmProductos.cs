@@ -11,9 +11,9 @@ using CapaNegocio;
 
 namespace LABOR_3
 {
-    public partial class frmPrincipal : Form
+    public partial class frmProductos : Form
     {
-        public frmPrincipal()
+        public frmProductos()
         {
             InitializeComponent();
         }
@@ -21,21 +21,15 @@ namespace LABOR_3
 
         private dynamic[] insertarDatos()
         {
-            dynamic[] datos = new dynamic[6];
+            dynamic[] datos = new dynamic[3];
             try
             {
-                int IdCliente = int.Parse(txtIdCliente.Text);
-                int cedula = int.Parse(txtCedula.Text);
-                string nombre = txtNombre.Text;
-                string apellido = txtApellido.Text;
-                string sexo = txtSexo.Text;
-                string fechaNacimiento = txtFechaNac.Text;
-                datos[0] = IdCliente;
-                datos[1] = cedula;
-                datos[2] = nombre;
-                datos[3] = apellido;
-                datos[4] = sexo;
-                datos[5] = fechaNacimiento;
+                int IdProduto = int.Parse(txtIdProducto.Text);
+                string descripcion = txtDescripcion.Text;
+                int precio = int.Parse(txtPrecio.Text);
+                datos[0] = IdProduto;
+                datos[1] = descripcion;
+                datos[2] = precio;
                 MessageBox.Show("Datos Correctos...", "Aceptado",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -47,8 +41,6 @@ namespace LABOR_3
             return datos;
         }
 
-
-        
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -66,33 +58,12 @@ namespace LABOR_3
             }
             limpiarCampos();
         }
-        
 
         private void limpiarCampos()
         {
-            txtIdCliente.Clear();
-            txtCedula.Clear();
-            txtNombre.Clear();
-            txtApellido.Clear();
-            txtSexo.Clear();
-            txtFechaNac.Clear();
-        }
-
-
-        private void frmPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmProductos ventaProductos = new frmProductos();
-            ventaProductos.Visible = true;
-        }
-
-        private void ingresarComprasToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
+            txtIdProducto.Clear();
+            txtDescripcion.Clear();
+            txtPrecio.Clear();
         }
     }
 }
