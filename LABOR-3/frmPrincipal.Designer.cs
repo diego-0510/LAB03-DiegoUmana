@@ -218,7 +218,7 @@ namespace LABOR_3
             // dgvClientes
             // 
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(444, 116);
+            this.dgvClientes.Location = new System.Drawing.Point(430, 106);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.Size = new System.Drawing.Size(384, 203);
             this.dgvClientes.TabIndex = 32;
